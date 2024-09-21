@@ -1,0 +1,504 @@
+.stickt-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #f8f9fa;
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.navbar_conatiner {
+    width: 98%;
+}
+
+.navbar-home .navbar_logo_image {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.navbar_logo_image_img {
+    display: none;
+}
+
+.head_images {
+    height: 550px;
+    object-fit: cover;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.active-nav-link {
+    border-bottom: 2px solid #007bff !important;
+    color: #007bff !important;
+}
+
+
+
+/* about css  */
+
+.about_right_para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_right_para .about_right_para_para {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.about_home .about_div {
+    width: 70%;
+}
+
+.about_home .about-left-img {
+    width: 100%;
+    height: 350px;
+    object-fit: initial;
+}
+
+.about_footer {
+    display: flex;
+}
+
+.about_content {
+    display: flex;
+    gap: 15px;
+}
+
+.about_content .card {
+    font-size: 0.8rem;
+    line-height: 30px;
+    padding: 30px;
+}
+
+.about_content .card:hover {
+    background-color: rgb(95 111 255);
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.why_choose_us {
+    margin: 1rem 0px;
+}
+
+.about_home .about_home_heading {
+    text-align: center;
+    margin: 25px 0px;
+}
+
+
+
+
+/* card css  */
+
+.card:hover {
+    transform: translateY(-8px);
+    transition: 0.8s;
+}
+
+.card_home .image_height_size {
+    height: 167px;
+    object-fit: cover;
+}
+
+.card_home .cards_readmore_btn {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.card_home .read_morebtn {
+    background-color: white;
+    color: black;
+    padding: 6px 14px;
+    border: 1px solid;
+    font-size: 12px;
+}
+
+.card_home .read_morebtn:hover,
+.teachers_more:hover {
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+}
+
+.teachers_more {
+    padding: 0.5rem 3rem;
+    border: 1px solid;
+}
+
+.card_home .cards_main_para {
+    font-size: 15px;
+}
+
+.card_home .card_main_head {
+    text-align: center;
+    margin: 3rem 0px;
+}
+
+
+
+/* bannerteacher  */
+
+.banner_teachers_home {
+    display: flex;
+    padding-top: 30px;
+}
+
+.banner_teachers_home .banner_teachers_home_container {
+    background-color: rgba(95 111 255);
+    color: white;
+    padding: 40px 70px;
+}
+
+.banner_teachers_home .banner_teachers_home_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.banner_teachers_home_title {
+    font-size: 3rem;
+}
+
+.banner_teachers_home .banner_teachers_home_create_btn {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 20px 0px;
+    border-radius: 26px;
+}
+
+.banner_teachers_home .banner_teachers_home_create_btn:hover {
+    transform: translateY(-10px);
+    transition: 0.8s ease-in-out;
+}
+
+.banner_teachers_home .banner_teachers_home_create_btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+}
+
+.banner_teachers_home .banner_teachers_home_img {
+    width: 300px;
+}
+
+
+
+
+
+/* contact css  */
+
+.contact_home .contact-left-img {
+    width: 100%;
+}
+
+.contact_home .contact_details {
+    font-size: 14px;
+    color: gray;
+}
+
+.contact_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact_home .explore_more_btn {
+    padding: 12px;
+    width: 50%;
+    font-size: 0.87rem;
+}
+
+.contact_home .explore_more_btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+}
+
+.contact_details .contact_details_anchor {
+    color: gray;
+}
+
+.contact_home .contact_main_heading .contact_main_heading_h2 {
+    margin: 3rem 0px 3rem 0px;
+}
+
+.contact_main_heading_h2 {
+    color: #8a7f7f;
+}
+
+.contact_main_heading_h2 span {
+    color: rgb(55 65 81);
+}
+
+.contact_home {
+    position: relative;
+    padding: 20px;
+}
+
+
+
+/* all teachers  */
+
+.alltecter_home {
+    padding: 30px 0px;
+}
+
+.subject_changing_btn {
+    padding: 6px;
+    width: 98%;
+    margin: 5px 0px;
+    border: 1px solid #a0a0a0;
+    font-size: 15px;
+}
+
+.activecolor_bg {
+    background-color: rgb(96 165 250);
+    color: white;
+}
+
+.read_morebtn,
+.single_checkbtn {
+    border: 1px solid gray;
+    padding: 4px 7px;
+}
+
+.read_morebtn:hover,
+.single_checkbtn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+}
+
+.education_home .education_left_img img {
+    border: 1px dashed gray;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.education_home .education_right_para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* education csss  */
+
+.education_home .main_school_image .education_main_image {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.education_home .marque_div .marque_images {
+    width: 210px;
+    height: 165px;
+    margin-right: 2px;
+}
+
+.marque_div {
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.marque_div span {
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px dashed gray;
+}
+
+.marque_div p {
+    margin: 5px;
+}
+
+.education_main_heading {
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.firstto_six {
+    margin: 3rem 0px;
+}
+
+
+
+
+
+/* single teachers */
+
+.single_home {
+    margin: 40px 0px;
+}
+
+.single_home .single_left {
+    text-align: end;
+}
+
+.single_home .single_left .single_left_img {
+    width: 100%;
+    height: 100%;
+}
+
+.single_home .single_right {
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* footer css  */
+
+.footer_logo .navbar_logo_image {
+    width: 50px;
+    cursor: pointer;
+}
+
+.footer_home .footer_logo_para {
+    color: gray;
+    font-size: 13px;
+}
+
+.footer_home .footer_links {
+    cursor: pointer;
+    color: gray;
+    font-size: 13px;
+}
+
+.footer_home .footer_number {
+    cursor: pointer;
+    text-decoration: none;
+    color: gray;
+}
+
+.footer_home .footer_footer {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.footer_home .final_footer {
+    text-align: center;
+    border-top: 1px dashed gray;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    /* navbar  */
+
+    .navbar-home .nav_large_screensw_only {
+        display: none;
+    }
+
+    .navbar_logo_image_img {
+        display: block;
+    }
+
+    .contact_content {
+        flex-direction: column;
+        /* margin: 0px 2px; */
+    }
+
+    .active-nav-link {
+        border-bottom: none !important;
+        color: #007bff !important;
+    }
+
+    .contact_home .contact_main_heading .contact_main_heading_h2 {
+        margin: 1rem 0px;
+    }
+
+
+
+    /* home carosuel css media  */
+
+    .head_images {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* cards media css  */
+
+    .card_home .card_main_head {
+        margin: 1rem 0px;
+    }
+
+
+    /* last banner media css  */
+
+    .banner_teachers_home .banner_teachers_home_container {
+        padding: 30px 20px;
+    }
+
+    .banner_teachers_home .banner_teachers_home_create_btn {
+        width: 50%;
+    }
+
+    .banner_teachers_home_title {
+        font-size: 2rem;
+    }
+
+
+
+    /* all teachers media css  */
+
+    .alltecter_home .show_hide {
+        display: block;
+    }
+
+
+
+    /* about media css  */
+
+    .about_home .about_div {
+        width: 100%;
+    }
+
+    .about_home .about-left-img {
+        padding-bottom: 20px;
+        height: 100%;
+    }
+
+    .about_content {
+        flex-direction: column;
+    }
+
+    /* education media css  */
+    .education_home .main_school_image .education_main_image {
+        height: 100%;
+    }
+
+    .education_left_img {
+        margin-bottom: 20px;
+    }
+
+    .sixto_thenth .sixto_thenth_reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .firstto_six {
+        margin: 0rem 0px;
+    }
+}
