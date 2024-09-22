@@ -7,7 +7,7 @@ const Education = () => {
             <div className='container-fluid' >
                 <div className='row'>
                     <div className='main_school_image'>
-                        <img className='education_main_image' src="https://lh3.googleusercontent.com/p/AF1QipNcJNvKgx5JdFogAUhyxVp_Lm-W_iSeEkFY1H0J=s1360-w1360-h1020" />
+                        <img className='education_main_image' src="https://c1.wallpaperflare.com/preview/928/174/528/school-learning-graphic-design.jpg" />
                     </div>
                 </div>
             </div>

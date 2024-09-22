@@ -25,7 +25,7 @@ const About = () => {
             </div>
 
 
-            <div className='container mt-5 mb-5'>
+            <div className='container pt-5 pb-5'>
                 <div className='row'>
                     <h6 className='why_choose_us'>Why Choose Us</h6>
                     <div className='about_content'>

@@ -9,7 +9,7 @@ const Cardstecahers = () => {
 
 
     return (
-        <div className='card_home my-4'>
+        <div className='card_home py-4'>
             <h2 className='card_main_head '> Top - Teacher's </h2>
             <div className='container'>
                 <div className='row'>
@@ -109,7 +109,7 @@ const Cardstecahers = () => {
                         </div>
                     </div>
                 </div>
-                <div className='text-center my-4'>
+                <div className='text-center py-4'>
                     <button className='teachers_more' onClick={() => { navigate('/allteachers'); window.scrollTo(0, 0) }}> More </button>
                 </div>
             </div>

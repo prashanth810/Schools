@@ -7,7 +7,7 @@ const Footer = () => {
     const navigate = useNavigate();
 
     return (
-        <div className='footer_home mt-5'>
+        <div className='footer_home pt-5'>
             <div className='container'>
                 <footer className='footer_footer'>
                     <div className='row'>

@@ -1,13 +1,35 @@
+.dark-mode {
+    --primary-bg-color: black;
+    --secondary-text-color: white;
+    --dark-modeshadow: red;
+    --navbar-bg-text-color: white !important;
+}
+
+.light-mode {
+    --primary-bg-color: white;
+    --secondary-text-color: black;
+    --dark-modeshadow: gray;
+    --navbar-bg-text-color: white;
+}
+
+.navbar-toggler {
+    background-color: var(--navbar-bg-text-color) !important;
+}
+
 .stickt-navbar {
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
-    background-color: #f8f9fa;
+    background-color: var(--primary-bg-color);
     padding: 10px 5px;
     font-weight: bold;
     font-size: 17px;
+}
+
+.nav-link {
+    color: var(--secondary-text-color) !important;
 }
 
 .navbar_conatiner {
@@ -41,6 +63,11 @@
 
 
 /* about css  */
+
+.about_home {
+    color: var(--secondary-text-color) !important;
+    background-color: var(--primary-bg-color);
+}
 
 .about_right_para {
     display: flex;
@@ -76,6 +103,9 @@
     font-size: 0.8rem;
     line-height: 30px;
     padding: 30px;
+    color: var(--secondary-text-color) !important;
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 0px 5px 0px var(--dark-modeshadow);
 }
 
 .about_content .card:hover {
@@ -91,13 +121,24 @@
 
 .about_home .about_home_heading {
     text-align: center;
-    margin: 25px 0px;
+    padding: 25px 0px;
 }
 
 
 
 
 /* card css  */
+
+.card_home {
+    background-color: var(--primary-bg-color);
+}
+
+.card_home .card,
+.alltecter_home .card {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color);
+    box-shadow: 0px 0px 5px 0px var(--dark-modeshadow);
+}
 
 .card:hover {
     transform: translateY(-8px);
@@ -141,7 +182,8 @@
 
 .card_home .card_main_head {
     text-align: center;
-    margin: 3rem 0px;
+    padding: 3rem 0px;
+    color: var(--secondary-text-color);
 }
 
 
@@ -151,6 +193,7 @@
 .banner_teachers_home {
     display: flex;
     padding-top: 30px;
+    background-color: var(--primary-bg-color);
 }
 
 .banner_teachers_home .banner_teachers_home_container {
@@ -219,6 +262,7 @@
     padding: 12px;
     width: 50%;
     font-size: 0.87rem;
+    border: 1px solid var(--primary-bg-color);
 }
 
 .contact_home .explore_more_btn:hover {
@@ -246,14 +290,20 @@
 .contact_home {
     position: relative;
     padding: 20px;
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color) !important;
 }
 
-
+.subject_changing_btn {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color) !important;
+}
 
 /* all teachers  */
 
 .alltecter_home {
     padding: 30px 0px;
+    background-color: var(--primary-bg-color);
 }
 
 .subject_changing_btn {
@@ -297,6 +347,11 @@
 
 /* education csss  */
 
+.education_home {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color);
+}
+
 .education_home .main_school_image .education_main_image {
     height: 500px;
     width: 100%;
@@ -320,7 +375,7 @@
     display: inline-block;
     text-align: center;
     margin-right: 5px;
-    padding: 10px;
+    padding: 9px;
     border: 1px dashed gray;
 }
 
@@ -344,7 +399,9 @@
 /* single teachers */
 
 .single_home {
-    margin: 40px 0px;
+    padding: 40px 0px;
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color);
 }
 
 .single_home .single_left {
@@ -365,6 +422,11 @@
 }
 
 /* footer css  */
+
+.footer_home {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color) !important;
+}
 
 .footer_logo .navbar_logo_image {
     width: 50px;
@@ -399,6 +461,7 @@
     padding-top: 10px;
     font-size: 12px;
 }
+
 
 
 
@@ -501,4 +564,11 @@
     .firstto_six {
         margin: 0rem 0px;
     }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .navbar-home .nav_large_screensw_only {
+        display: none;
+    }
+
 }

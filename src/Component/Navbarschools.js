@@ -1,13 +1,33 @@
-import React from 'react';
-import './Nav.css';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import './Nav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 const Navbarschools = () => {
+
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light-mode');
+
+    const themehandler = () => {
+        if (theme === 'light-mode') {
+            setTheme('dark-mode');
+            localStorage.setItem('theme', 'dark-mode');
+        } else {
+            setTheme('light-mode');
+            localStorage.setItem('theme', 'light-mode');
+        }
+    };
+
+
+    useEffect(() => {
+        document.body.className = theme;
+    }, [theme]);
+
     const navigate = useNavigate();
-    const location = useLocation(); // Get the current location
+    const location = useLocation();
 
     const isActive = (path) => {
-        return location.pathname === path ? 'active-nav-link' : ''; // Add class if active
+        return location.pathname === path ? 'active-nav-link' : '';
     };
 
     return (
@@ -65,6 +85,24 @@ const Navbarschools = () => {
                                     alt="user"
                                 />
                             </li>
+
+                            <li>
+                                <div>
+                                    <FontAwesomeIcon
+                                        icon={theme === 'light-mode' ? faMoon : faSun}
+                                        onClick={themehandler}
+                                        style={{
+                                            cursor: 'pointer',
+                                            margin: '11px',
+                                            color: theme === 'light-mode' ? 'black' : 'white',
+                                            fontSize: '22px'
+                                        }}
+                                    />
+                                </div>
+                            </li>
+
+
+
                         </ul>
                     </div>
                     <div className='ms-auto nav_large_screensw_only'>
